@@ -23,7 +23,7 @@ function setBgColor(data, index) {
 }
 
 function setImage(data, index) {
-  img.src = `./assets/${data[index - 1].name}.jpeg`;
+  img.src = `/assets/${data[index - 1].name}.jpeg`;
   img.alt = data[index - 1].alt;
 }
 
