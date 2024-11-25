@@ -23,7 +23,7 @@ function setBgColor(data, index) {
 }
 
 function setImage(data, index) {
-  img.src = `/mission02/client/assets/${data[index - 1].name.toLowerCase()}.jpeg`;
+  img.src = `./assets/${data[index - 1].name.toLowerCase()}.jpeg`;
   img.alt = data[index - 1].alt;
 }
 
