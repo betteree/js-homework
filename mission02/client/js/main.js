@@ -38,6 +38,7 @@ function handler(e) {
 
   if (!target) return;
 
+
   const index = target.dataset.index;
   const nickName = getNode(".nickName");
   //원래 함수 실행되는 시점에서 가져오지 않고 함수 밖에서 가져왔더니 삭제가 안되고 계속 추가되는 현상이 생겼다
@@ -52,6 +53,9 @@ function handler(e) {
   setNameText(container, "afterbegin", title);
   setBgColor(data, index);
   setImage(data, index);
+
+  const audio = new AudioPlayer(`./assets/audio/${source.name}.m4a`);
+
 
   target.classList.add("is-active");
 }
